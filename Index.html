@@ -1,0 +1,117 @@
+<div class="buttons">
+    <button class="main-button" onclick="startCourse()">
+        <span>📖</span>
+        Изучать всё
+        <small>Пройти курс от начала до конца</small>
+    </button>
+
+    <button class="main-button" onclick="showTopics()">
+        <span>🎯</span>
+        Выбрать тему
+        <small>Изучить именно то, что нужно</small>
+    </button>
+</div>
+
+<div class="progress">
+    <h3>📈 Твой прогресс</h3>
+    <p id="progressText">0 / 20 уроков пройдено</p>
+
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+</div>
+
+<section id="topics">
+    <h2>🎯 Выбери тему</h2>
+
+    <div class="topic-grid">
+
+        <button class="topic" onclick="openLesson('Что такое дробь?')">
+            🧩 Что такое дробь?
+        </button>
+
+        <button class="topic" onclick="openLesson('Числитель и знаменатель')">
+            🔢 Числитель и знаменатель
+        </button>
+
+        <button class="topic" onclick="openLesson('Виды дробей')">
+            📚 Виды дробей
+        </button>
+
+        <button class="topic" onclick="openLesson('Правильные дроби')">
+            ✅ Правильные дроби
+        </button>
+
+        <button class="topic" onclick="openLesson('Неправильные дроби')">
+            🔄 Неправильные дроби
+        </button>
+
+        <button class="topic" onclick="openLesson('Смешанные числа')">
+            🍕 Смешанные числа
+        </button>
+
+        <button class="topic" onclick="openLesson('Равные дроби')">
+            🟰 Равные дроби
+        </button>
+
+        <button class="topic" onclick="openLesson('Сокращение дробей')">
+            ✂️ Сокращение дробей
+        </button>
+
+        <button class="topic" onclick="openLesson('Сравнение дробей')">
+            ⚖️ Сравнение дробей
+        </button>
+
+        <button class="topic" onclick="openLesson('Сложение дробей')">
+            ➕ Сложение дробей
+        </button>
+
+        <button class="topic" onclick="openLesson('Вычитание дробей')">
+            ➖ Вычитание дробей
+        </button>
+
+        <button class="topic" onclick="openLesson('Умножение дробей')">
+            ✖️ Умножение дробей
+        </button>
+
+        <button class="topic" onclick="openLesson('Деление дробей')">
+            ➗ Деление дробей
+        </button>
+
+        <button class="topic" onclick="openLesson('Десятичные дроби')">
+            🔢 Десятичные дроби
+        </button>
+
+    </div>
+</section>
+
+<section class="lesson" id="lesson">
+    <button class="back" onclick="closeLesson()">← Назад</button>
+
+    <h2 id="lessonTitle"></h2>
+
+    <p>
+        Здесь будет полноценный конспект темы,
+        объяснение простыми словами, примеры,
+        практика и мини-тест.
+    </p>
+
+    <div class="example">
+        💡 <strong>Пример:</strong><br><br>
+        Представь пиццу, разделённую на 4 одинаковые части.
+        Если ты взял 1 часть, это означает:
+        <br><br>
+        <strong>1/4</strong>
+    </div>
+
+    <h3>🧠 Попробуй сам</h3>
+
+    <p>
+        Сколько частей из 4 ты взял бы,
+        если съел половину пиццы?
+    </p>
+
+    <button class="main-button" onclick="completeLesson()">
+        ✅ Я понял(а) тему
+    </button>
+</section>
